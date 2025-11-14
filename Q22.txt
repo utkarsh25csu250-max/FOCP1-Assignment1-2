@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include<string.h>
+
+int main(){
+	char s[20];
+    scanf("%s", s);
+
+    int z = 0, o = 0;
+
+    for (int i = 0; s[i]; i++) {
+        if (s[i] == 'z') z++;
+        else if (s[i] == 'o') o++;
+    }
+
+    if (o == 2 * z) printf("Yes\n");
+    else printf("No\n");     
+return 0;
+}
